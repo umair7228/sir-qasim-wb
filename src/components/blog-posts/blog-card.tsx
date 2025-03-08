@@ -8,7 +8,7 @@ type Props = {
 
 export default function BlogCard({ post }: Props) {
   return (
-    <Card className="flex flex-col">
+    <Card className="flex flex-col hover:scale-105  duration-300">
       <CardHeader>
         <img
           className="rounded-lg h-full"

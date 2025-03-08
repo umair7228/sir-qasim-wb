@@ -25,7 +25,7 @@ const Header = () => {
             height={100}
             className='rounded-full w-8 h-8 md:w-11 md:h-11 lg:w-12 lg:h-12'
         />
-        <h2 className='text-lg md:text-2xl font-bold text-[#4183C4]'>QASIM HASSAN</h2>
+        <h2 className='text-lg md:text-2xl font-bold text-[#816cb8]'>QASIM HASSAN</h2>
       </Link>
 
       {/* buttons */}

@@ -1,17 +1,19 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+import AnimateLayout from "./AnimateLayout";
 
 const AboutPage = () => {
   return (
     <section className="flex flex-col items-center justify-center">
       {/* Right Image */}
-      <div className="flex flex-col items-center justify-center min-h-screen">
+      <AnimateLayout className="flex flex-col items-center justify-center min-h-screen">
         <Image
           src="/logo.png"
           alt="Hero Image"
-          width={500}
-          height={500}
-          className="w-auto h-auto rounded-full"
+          width={260}
+          height={260}
+          className="!w-[45%] !h-[45%] xl:w-auto xl:h-auto rounded-full"
         />
         <h2 className="text-center text-8xl text-[#816cb8] font-bold tracking-wider">
           QASIM HASSAN
@@ -19,11 +21,11 @@ const AboutPage = () => {
         <h3 className="text-center font-semibold text-xl">
           Meet the Creator of This Portfolio
         </h3>
-      </div>
+      </AnimateLayout>
 
-      <div>
+      <AnimateLayout>
         <h4 className="text-3xl font-bold">About Me</h4>
-        <hr className="w-[12%] border-t-4 border-[#816cb8]" />
+        <hr className="!w-[16%] xl:w-[12%] border-t-4 border-[#816cb8]" />
         <p className="text-lg font-semibold mt-6 text-[#4d4b4b]">
           Hi, folks. I'm Qasim Hassan @ aiwithqasim a Computer Engineer
           graduate & Data Engineer by profession from Pakistan. Worked with 48+
@@ -65,7 +67,7 @@ const AboutPage = () => {
             <li>Neural Network Architecture (CNN)</li>
             <li>Cloud: Amazon Web Service (AWS)</li>
         </ul>
-      </div>
+      </AnimateLayout>
     </section>
   );
 };

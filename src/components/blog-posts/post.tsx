@@ -22,7 +22,7 @@ export default function Post({ slug }: Props) {
   if (!data) return notFound();
 
   return (
-    <div className="mt-10">
+    <div className="!mt-32 2xl:mt-10">
       <img src={data?.coverImage.url} alt="" className="w-full" />
       <h1 className="text-2xl md:text-3xl xl:text-4xl text-center leading-relaxed font-bold mt-10">
         {data?.title}
